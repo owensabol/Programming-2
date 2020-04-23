@@ -11,6 +11,16 @@ import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
+    @IBOutlet weak var myWebView: WKWebView!
+    let url = URL (string : "https://www.mlb.com/pirates")
+    myWebView.loadRequest(URLRequest(url: url!))
+    
+   
+    
+    
+    
+    
+    
     @IBOutlet weak var distanceLabel: UILabel!
     
     let locMan: CLLocationManager = CLLocationManager()
@@ -61,6 +71,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
 
 
+        
+        
+        
+        
+        
+        
 }
 
 }
